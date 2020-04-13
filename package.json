@@ -1,0 +1,26 @@
+{
+  "name": "@enesusta/devtools",
+  "version": "1.0.0",
+  "description": "Tools to make an Javascript developer's life easier",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enesusta/javascript-devtools.git"
+  },
+  "author": "Enes Usta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enesusta/javascript-devtools/issues"
+  },
+  "homepage": "https://github.com/enesusta/javascript-devtools#readme",
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "ts-loader": "6.2.2",
+    "typescript": "3.4.3"
+  }
+}

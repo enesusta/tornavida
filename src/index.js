@@ -1,3 +1,3 @@
-import Cat from './cat.js';
-import Dog from './dog.js';
-export { Dog, Cat };
+import http from './http/http.js';
+
+export { http };

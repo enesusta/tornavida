@@ -1,10 +1,10 @@
 {
   "name": "@enesusta/devtools",
-  "version": "1.0.2",
-  "description": "Produce universal library with webpack and es6",
-  "main": "dist/devtools.js",
+  "version": "1.0.3",
+  "description": "Tools to make an Javascript developer's life easier",
+  "main": "dist/@enesusta/devtools.js",
   "scripts": {
-    "build": "webpack --env dev && webpack --env build && npm run test",
+    "build": "webpack --env dev && webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-register --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",

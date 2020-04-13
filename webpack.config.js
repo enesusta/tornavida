@@ -5,6 +5,7 @@ module.exports = {
     output: {
         filename: 'bundle.js'
     },
+    externals: ['axios'],
     module: {
         rules: [
             {
@@ -15,6 +16,8 @@ module.exports = {
         ]
     },
     resolve: {
+        modules: [path.resolve(__dirname, '/src', 'node_modules/')],
+        descriptionFiles: ['package.json'],
         extensions: [".tsx", ".ts", ".js"]
     },
 }

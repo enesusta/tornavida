@@ -1,12 +1,17 @@
 {
   "name": "@enesusta/devtools",
-  "version": "1.1.4",
+  "version": "1.3.3",
   "description": "Tools to make an Javascript developer's life easier",
   "main": "dist/devtools.js",
-  "types": "src/devtools.d.ts",
+  "types": "index.d.ts",
   "scripts": {
-    "cleanup": "rm -rf .cache dist",
-    "build": "npm run cleanup && parcel build src/devtools.ts --target node --bundle-node-modules"
+    "cleanup": "rm -rf dist",
+    "build": "npm run cleanup && webpack --env dev && webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
+    "test:cover": "cross-env NODE_ENV=test nyc mocha --require babel-register --colors test/*.js",
+    "repl": "node -i -e \"$(< ./lib/webpack-library-starter.js)\""
   },
   "repository": {
     "type": "git",
@@ -19,9 +24,31 @@
   },
   "homepage": "https://github.com/enesusta/javascript-devtools#readme",
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
     "axios": "^0.19.2",
-    "@types/node": "^10.7.0",
-    "parcel-bundler": "^1.9.7",
-    "typescript": "^2.9.2"
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^8.0.0-beta.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-istanbul": "^5.1.0",
+    "babel-preset-env": "^7.0.0-beta.3",
+    "babel-register": "^7.0.0-beta.3",
+    "chai": "^4.1.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "jsdom": "11.11.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^4.0.1",
+    "nyc": "^13.1.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8",
+    "yargs": "^10.0.3"
+  },
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false
   }
 }

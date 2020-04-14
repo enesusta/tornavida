@@ -4,7 +4,7 @@
   "description": "Tools to make an Javascript developer's life easier",
   "main": "dist/main.js",
   "scripts": {
-    "build": "parcel build src/main.ts"
+    "build": "parcel build src/main.ts --target node --bundle-node-modules"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,9 @@
   "homepage": "https://github.com/enesusta/javascript-devtools#readme",
   "devDependencies": {
     "axios": "^0.19.2",
+    "@types/node": "^10.7.0",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.7",
     "parcel-bundler": "^1.9.7",
     "typescript": "^2.9.2"
   }

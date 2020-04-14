@@ -56,7 +56,7 @@ var e=require("process"),t=require("./utils"),r=require("./helpers/normalizeHead
 module.exports=require("./lib/axios");
 },{"./lib/axios":"nUiQ"}],"Moqt":[function(require,module,exports) {
 "use strict";function e(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function t(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function n(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var u=r(require("axios")),o=function(){function t(){e(this,t)}return n(t,[{key:"get",value:function(e){return u.default.get(e)}},{key:"post",value:function(e){return u.default.post(e)}}]),t}(),a=new o;Object.freeze(a),exports.default=a;
-},{"axios":"dZBD"}],"QCba":[function(require,module,exports) {
-"use strict";var t=this&&this.__importDefault||function(t){return t&&t.__esModule?t:{default:t}};Object.defineProperty(exports,"__esModule",{value:!0});var e=t(require("./http/http"));exports.http=e.default;
-},{"./http/http":"Moqt"}]},{},["QCba"], null)
-//# sourceMappingURL=/index.js.map
+},{"axios":"dZBD"}],"ZCfc":[function(require,module,exports) {
+"use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var t=e(require("./http/http"));exports.default=t.default;
+},{"./http/http":"Moqt"}]},{},["ZCfc"], null)
+//# sourceMappingURL=/main.js.map

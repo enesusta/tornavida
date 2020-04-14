@@ -1,10 +1,10 @@
 {
   "name": "@enesusta/devtools",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Tools to make an Javascript developer's life easier",
-  "main": "dist/devtools.js",
+  "main": "dist/main.js",
   "scripts": {
-    "build": "parcel build src/index.ts"
+    "build": "parcel build src/main.ts"
   },
   "repository": {
     "type": "git",

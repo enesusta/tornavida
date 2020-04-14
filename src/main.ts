@@ -1,3 +1,3 @@
 import http from "./http/http";
 
-export {http};
+export default http;

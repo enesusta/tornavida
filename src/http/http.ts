@@ -1,17 +1,11 @@
-import axios from 'axios';
+import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
 
-class SingletonClient {
-    constructor() { }
-    get(url: string) {
+export default class HttpClient {
+
+    private api: AxiosInstance;
+    constructor() { this.api = axios.create() }
+
+    public get<T, R = AxiosResponse<T>>(url: string): Promise<R> {
         return axios.get(url);
     }
-    post(url: string) {
-        return axios.post(url);
-    }
 }
-
-const http: SingletonClient = new SingletonClient();
-
-Object.freeze(http);
-
-export default http;

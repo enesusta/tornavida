@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "rootDir": "./src",
+    "incremental": true,
+    "experimentalDecorators": true,
+    "lib": ["dom", "es2015"]
+  }
+}

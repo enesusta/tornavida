@@ -2,15 +2,15 @@ import axios from 'axios';
 
 class SingletonClient {
     constructor() { }
-    get(url) {
+    get(url: string) {
         return axios.get(url);
     }
-    post(url) {
+    post(url: string) {
         return axios.post(url);
     }
 }
 
-const http = new SingletonClient();
+const http: SingletonClient = new SingletonClient();
 
 Object.freeze(http);
 

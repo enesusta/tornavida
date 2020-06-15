@@ -1,5 +1,25 @@
+sudo: required
 language: node_js
 node_js:
-  - 8
-env:
-  - SKIP_PREFLIGHT_CHECK=true
+  - 11
+
+branches:
+  except:
+    - develop
+    - /^feature/\d+\.\d+$/
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - npm update
+
+install:
+  - npm install
+
+script:
+  - echo "repo_token: $COVERALLS_TOKEN" >> .coveralls.yml
+  - yarn coveralls

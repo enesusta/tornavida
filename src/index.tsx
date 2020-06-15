@@ -1,2 +1,3 @@
 import { isOdd } from './isOdd';
-export { isOdd };
+import { isPrimitiveArraysEqual } from './isPrimitiveArraysEqual';
+export { isOdd, isPrimitiveArraysEqual };

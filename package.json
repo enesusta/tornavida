@@ -1,6 +1,6 @@
 {
   "name": "@enesusta/devtools",
-  "version": "1.3.7",
+  "version": "1.3.8",
   "description": "Tool to make an Javascript developer's life easier",
   "author": "Enes Usta",
   "license": "MIT",
@@ -43,5 +43,8 @@
     "ts-jest": "^26.1.0",
     "typescript": "^3.2.4"
   },
-  "homepage": "https://github.com/enesusta/javascript-devtools#readme"
+  "homepage": "https://github.com/enesusta/javascript-devtools#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }

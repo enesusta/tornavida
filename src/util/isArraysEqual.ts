@@ -1,4 +1,4 @@
-export const isArraysEqual = (arrayOne: any[], arrayTwo: any[]): Boolean => {
+export const isArraysEqual = (arrayOne: (any|null)[], arrayTwo: (any|null)[]): Boolean => {
   if (arrayOne === arrayTwo) return true;
   if (arrayOne == null || arrayTwo == null) return false;
   if (arrayOne.length != arrayTwo.length) return false;

@@ -1,3 +1,3 @@
-import { isOdd } from './isOdd';
-import { isPrimitiveArraysEqual } from './isPrimitiveArraysEqual';
-export { isOdd, isPrimitiveArraysEqual };
+export * from './math';
+export * from './text';
+export * from './util';

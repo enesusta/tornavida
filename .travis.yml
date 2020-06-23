@@ -23,7 +23,7 @@ install:
 script:
   - yarn coveralls
 
-deploy:
-  provider: npm
-  email: "enesusta@email.com"
-  api_key: $NPM_API_KEY
+#deploy:
+#  provider: npm
+#  email: "enesusta@email.com"
+#  api_key: $NPM_API_KEY

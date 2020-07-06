@@ -1,5 +1,5 @@
-export * from './isArraysEqual';
-export * from './isPrimitiveArraysEqual';
-export * from './isOdd';
-export * from './sortAscByField';
-export * from './sortDescByField';
+export {default as isArraysEqual} from './isArraysEqual';
+export {default as isPrimitiveArraysEqual} from './isPrimitiveArraysEqual';
+export {default as isOdd} from './isOdd';
+export {default as sortAscByField} from './sortAscByField';
+export {default as sortDescByField} from './sortDescByField';

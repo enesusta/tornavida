@@ -1,3 +1,3 @@
-export const isOdd = (num : number) : Boolean => {
-   return (num & 1) != 0;
+export default function isOdd(num: number) {
+  return (num & 1) != 0;
 }

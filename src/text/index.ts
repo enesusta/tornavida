@@ -1,1 +1,1 @@
-export * from './capitalizeWithTurkish';
+export {default as capitalizeWithTurkish} from './capitalizeWithTurkish';

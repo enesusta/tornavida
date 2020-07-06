@@ -1,1 +1,1 @@
-export * from './findLongestLengthFieldOfArray';
+export {default as findLongestLengthFieldOfArray} from './findLongestLengthFieldOfArray';

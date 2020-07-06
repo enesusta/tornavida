@@ -1,15 +1,15 @@
 {
-  "name": "@enesusta/devtools",
-  "version": "1.3.8",
+  "name": "tornavida",
+  "version": "1.0.3",
   "description": "Tool to make an Javascript developer's life easier",
   "author": "Enes Usta",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enesusta/javascript-devtools.git"
+    "url": "git+https://github.com/enesusta/tornavida.git"
   },
   "bugs": {
-    "url": "https://github.com/enesusta/javascript-devtools/issues"
+    "url": "https://github.com/enesusta/tornavida/issues"
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -18,6 +18,11 @@
     "node": ">=8",
     "npm": ">=5"
   },
+  "files": [
+    "math/*",
+    "text/*",
+    "util/*"
+  ],
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
@@ -27,24 +32,17 @@
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/runtime": "^7.3.1",
-    "@types/jest": "^23.3.13",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "@types/jest": "^26.0.3",
     "coveralls": "^3.1.0",
-    "cross-env": "^5.2.0",
     "jest": "^26.0.1",
-    "rollup": "^1.1.2",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-typescript2": "^0.19.2",
-    "rollup-plugin-url": "^2.1.0",
-    "ts-jest": "^26.1.0",
+    "rollup": "^2.15.0",
+    "rollup-plugin-typescript2": "^0.19.3",
     "tslib": "^2.0.0",
-    "typescript": "^3.2.4"
+    "typescript": "^3.9.6"
   },
-  "homepage": "https://github.com/enesusta/javascript-devtools#readme",
+  "homepage": "https://github.com/enesusta/tornavida#readme",
   "publishConfig": {
     "access": "public"
   }

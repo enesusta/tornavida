@@ -1,4 +1,4 @@
-import { findLongestLengthFieldOfArray } from '../../src/math/findLongestLengthFieldOfArray';
+import findLongestLengthFieldOfArray from '../../src/math/findLongestLengthFieldOfArray';
 
 test('Should return 10', () => {
 

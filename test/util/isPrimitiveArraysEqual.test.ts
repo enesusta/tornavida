@@ -1,4 +1,4 @@
-import { isPrimitiveArraysEqual } from '../../src/util/isPrimitiveArraysEqual';
+import isPrimitiveArraysEqual from '../../src/util/isPrimitiveArraysEqual';
 
 
 test('Should return false given boolean arrays has not same primitive values', () => {

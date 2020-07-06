@@ -1,4 +1,4 @@
-import { sortAscByField } from '../../src/util/sortAscByField';
+import sortAscByField from '../../src/util/sortAscByField';
 
 test('Should return 10', () => {
     const arr = [

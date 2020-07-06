@@ -1,4 +1,4 @@
-import { sortDescByField } from '../../src/util/sortDescByField';
+import sortDescByField from '../../src/util/sortDescByField';
 
 test('Should return 15', () => {
     const arr = [

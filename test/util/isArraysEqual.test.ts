@@ -1,4 +1,4 @@
-import { isArraysEqual } from '../../src/util/isArraysEqual';
+import isArraysEqual from '../../src/util/isArraysEqual';
 
 test('Should return false given obj arrays has not same objects', () => {
     const objectArrOne = [

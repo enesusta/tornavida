@@ -1,6 +1,7 @@
 import typescript from 'rollup-plugin-typescript2'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
+import {terser} from "rollup-plugin-terser";
 
 import pkg from './package.json'
 
@@ -29,7 +30,8 @@ export default [
         declaration: true,
         declarationDir: 'dist'
       }),
-      commonjs()
+      commonjs(),
+      terser()
     ]
   },
   {
@@ -46,7 +48,28 @@ export default [
         clean: true,
         declaration: true,
         declarationDir: 'util'
-      })
+      }),
+      terser()
+    ]
+  },
+  {
+    input: 'src/util/index.ts',
+    output: [
+      {
+        dir: 'util/cjs',
+        format: 'cjs'
+      }
+    ],
+    plugins: [
+      resolve(),
+      typescript({
+        rollupCommonJSResolveHack: true,
+        clean: true,
+        declaration: true,
+        declarationDir: 'util/cjs'
+      }),
+      commonjs(),
+      terser()
     ]
   },
   {
@@ -63,7 +86,8 @@ export default [
         clean: true,
         declaration: true,
         declarationDir: 'math'
-      })
+      }),
+      terser()
     ],
   },
   {
@@ -80,9 +104,10 @@ export default [
         rollupCommonJSResolveHack: true,
         clean: true,
         declaration: true,
-        declarationDir: 'math'
+        declarationDir: 'math/cjs'
       }),
-      commonjs()
+      commonjs(),
+      terser(),
     ],
   },
   {
@@ -99,7 +124,8 @@ export default [
         clean: true,
         declaration: true,
         declarationDir: 'text'
-      })
+      }),
+      terser()
     ]
   },
   {
@@ -116,9 +142,10 @@ export default [
         rollupCommonJSResolveHack: true,
         clean: true,
         declaration: true,
-        declarationDir: 'text'
+        declarationDir: 'text/cjs'
       }),
-      commonjs()
+      commonjs(),
+      terser(),
     ]
   },
 ];

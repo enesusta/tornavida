@@ -24,7 +24,7 @@ npm i tornavida
 ## What kind of utility classes in this repository?
 
 
-```tsx
+```js
 import { isOdd } from 'tornavida'
 
 const x = isOdd(10); // false

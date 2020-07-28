@@ -1,4 +1,4 @@
-import findLongestLengthFieldOfArray from '../../src/math/findLongestLengthFieldOfArray';
+import fieldMax from '../../src/math/fieldMax';
 
 test('Should return 10', () => {
 
@@ -11,5 +11,5 @@ test('Should return 10', () => {
         }
     ]
 
-    expect(findLongestLengthFieldOfArray(obj, 'a')).toBe(10);
+    expect(fieldMax(obj, 'a')).toBe(10);
 })

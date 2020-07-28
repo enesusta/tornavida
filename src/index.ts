@@ -1,4 +1,4 @@
-import findLongestLengthFieldOfArray from './math/findLongestLengthFieldOfArray';
+import fieldMax from './math/fieldMax';
 import capitalizeWithTurkish from './text/capitalizeWithTurkish';
 import isArraysEqual from './util/isArraysEqual';
 import isOdd from './util/isOdd';
@@ -7,7 +7,7 @@ import sortDescByField from './util/sortDescByField';
 import isPrimitiveArraysEqual from './util/isPrimitiveArraysEqual';
 
 export default {
-    findLongestLengthFieldOfArray,
+    findLongestLengthFieldOfArray: fieldMax,
     capitalizeWithTurkish,
     isArraysEqual,
     isOdd,

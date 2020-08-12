@@ -6,7 +6,7 @@ Tools to make a Javascript developer's life easier
 
 <div align="center">
 
-[![Build Status](https://travis-ci.com/enesusta/tornavida.svg?branch=master)](https://travis-ci.com/enesusta/javascript-devtools)
+[![Build Status](https://travis-ci.com/enesusta/tornavida.svg?branch=master)](https://travis-ci.com/enesusta/tornavida)
 [![Coverage Status](https://coveralls.io/repos/github/enesusta/tornavida/badge.svg?branch=master)](https://coveralls.io/github/enesusta/tornavida?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/enesusta/tornavida/badge)](https://www.codefactor.io/repository/github/enesusta/tornavida)
 [![NPM](https://img.shields.io/npm/v/tornavida.svg)](https://www.npmjs.com/package/tornavida) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)

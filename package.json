@@ -1,6 +1,6 @@
 {
   "name": "tornavida",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Tool to make an Javascript developer's life easier",
   "author": "Enes Usta",
   "license": "MIT",
@@ -21,7 +21,8 @@
   "files": [
     "math/*",
     "text/*",
-    "util/*"
+    "util/*",
+    "hash/*"
   ],
   "scripts": {
     "build": "rollup -c",

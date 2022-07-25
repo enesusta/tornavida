@@ -1,0 +1,76 @@
+site_name: Tornavida
+theme:
+  language: en
+  features:
+    - content.code.annotate
+
+  name: material
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    typeface: 300
+
+plugins:
+  - search
+  - charts
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        tr: Turkish
+
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Turkish
+      link: /tr/
+      lang: tr
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/eenesusta
+    - icon: fontawesome/brands/github
+      link: https://github.com/enesusta
+
+#extra_css:
+#  - https://unpkg.com/mermaid@8.13.3/dist/mermaid.css
+#extra_javascript:
+#  - https://unpkg.com/mermaid@8.13.3/dist/mermaid.min.js
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/vega@5
+  - https://cdn.jsdelivr.net/npm/vega-lite@5
+  - https://cdn.jsdelivr.net/npm/vega-embed@6
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: vegalite
+          class: vegalite
+          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+#      custom_fences:
+#        - name: mermaid
+#          class: mermaid
+#          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+

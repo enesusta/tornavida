@@ -19,7 +19,6 @@ coverage
 math
 util
 text
-hash
 clean.sh
 *.d.ts
 

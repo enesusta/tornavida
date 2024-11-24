@@ -1,8 +1,8 @@
 {
   "name": "tornavida",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Tool to make an Javascript developer's life easier",
-  "author": "Enes Usta",
+  "author": "enesusta",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,15 +15,9 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "engines": {
-    "node": ">=8",
-    "npm": ">=5"
+    "node": ">=18",
+    "npm": ">=9"
   },
-  "files": [
-    "math/*",
-    "text/*",
-    "util/*",
-    "hash/*"
-  ],
   "scripts": {
     "build": "npm run clean && rollup -c",
     "start": "rollup -c -w",
@@ -31,20 +25,22 @@
     "test": "jest",
     "cov": "jest --coverage",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
-    "clean": "rm -rf math text util hash dist"
+    "clean": "rm -rf math text util hash dist",
+    "use:npmReadme": "mv 'README.md' 'git.README.md'",
+    "use:gitReadme": "mv 'git.README.md' 'README.md'",
+    "prepublishOnly": "pnpm build && pnpm use:npmReadme",
+    "postpublish": "pnpm use:gitReadme"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^13.0.0",
-    "@rollup/plugin-node-resolve": "^8.1.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.1",
     "@types/jest": "^26.0.3",
     "coveralls": "^3.1.0",
     "jest": "^26.0.1",
-    "rollup": "^2.15.0",
-    "rollup-plugin-terser": "^6.1.0",
-    "rollup-plugin-typescript2": "^0.19.3",
+    "rollup": "^4.27.4",
     "ts-jest": "^26.1.1",
-    "tslib": "^2.0.0",
-    "typescript": "^3.9.6"
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
   },
   "homepage": "https://github.com/enesusta/tornavida#readme",
   "publishConfig": {

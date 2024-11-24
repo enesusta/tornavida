@@ -1,3 +1,0 @@
-# Ihtar
-
-any sey

@@ -1,4 +1,25 @@
 # .npmignore
-node_modules
-test
-doc
+node_modules/
+docs/
+jest.config.js
+pnpm-lock.yaml
+
+
+git.README.md
+
+rollup.config.js.back
+rollup.config.mjs
+tsconfig.json
+tsconfig.test.json
+
+README.md
+package.json
+# ignore src, test
+src/**/*
+test/**/*
+
+package.json
+
+.travis.yml
+.gitattributes
+.editorconfig
